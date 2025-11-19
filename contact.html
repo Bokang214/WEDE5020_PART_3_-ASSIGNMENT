@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SmallBiz E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get In Touch</h2>
+        <p>You can reach us using the following details:</p>
+        <ul>
+            <li><strong>Email:</strong> support@smallbiz.com</li>
+            <li><strong>Phone:</strong> +27 78 456 8789</li>
+            <li><strong>Address:</strong> 123 Business Street, Johannesburg, South Africa</li>
+        </ul>
+
+        <h3>Our Location</h3>
+        <img src="images/IMG-20200907-WA0002-768x951.jpg" alt="Business Location Map" width="300">
+
+        <!-- ============================= -->
+        <!--        ADDED CONTACT FORM     -->
+        <!-- ============================= -->
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm" method="POST"
+              action="mailto:support@smallbiz.com?subject=Website%20Enquiry"
+              enctype="text/plain">
+
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="Full Name" required minlength="3"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="Email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="Phone"
+                   required pattern="\\d{10}" placeholder="10-digit phone number"><br><br>
+
+            <label for="type">Type of Message:</label><br>
+            <select id="type" name="Message Type" required>
+                <option value="">-- Select a type --</option>
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Product Question">Product Question</option>
+                <option value="Service Request">Service Request</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Feedback">Feedback</option>
+            </select><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="Message" rows="6" maxlength="500"
+                      placeholder="Type your full message here..." required></textarea><br><br>
+
+            <button type="submit">Send Email</button>
+        </form>
+
+        <div id="formResponse"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SmallBiz E-Commerce | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

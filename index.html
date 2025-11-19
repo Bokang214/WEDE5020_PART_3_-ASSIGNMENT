@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallBiz E-Commerce - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header>
+        <h1 class="fade-in">SmallBiz E-Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome To SmallBiz E-Commerce</h2>
+        <p>
+            We provide affordable and easy-to-use e-commerce solutions designed for small businesses.
+        </p>
+
+        <!-- Lightbox Image -->
+        <img src="images/auto.jpg.png" alt="E-commerce Banner" class="lightbox-img" width="600">
+
+        <!-- Tabs Section -->
+        <h2>Explore</h2>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="tab1">Why Us</button>
+            <button class="tab-btn" data-tab="tab2">Our Features</button>
+            <button class="tab-btn" data-tab="tab3">Get Started</button>
+        </div>
+
+        <div id="tab1" class="tab-content active">
+            <p>We offer affordable and powerful tools for small business owners.</p>
+        </div>
+        <div id="tab2" class="tab-content">
+            <p>Secure payments, product management, analytics and more.</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <p>Create your store today and start selling online!</p>
+        </div>
+
+        <!-- Modal Button -->
+        <button id="openHomeModal" class="modal-btn">New Updates</button>
+
+        <!-- Modal -->
+        <div id="homeModal" class="modal">
+            <div class="modal-content">
+                <span id="closeHomeModal" class="modal-close">&times;</span>
+                <h2>Latest Update</h2>
+                <p>New analytics dashboard launching next month!</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SmallBiz E-Commerce | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
